@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloWealth — Terms of Service</title>
+    <meta name="description" content="Terms of Service for the SoloWealth application. Financial simulation and educational tool.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="../logo.png" alt="SoloWealth Logo" class="logo">
+            </div>
+            <h1>Terms of Service</h1>
+            <p class="subtitle">SoloWealth — Financial Simulation & Education</p>
+            <div class="meta">
+                <span class="last-update">Last updated: May 7, 2026</span>
+            </div>
+        </header>
+
+        <section class="content-card">
+            <div class="intro">
+                <p>Welcome to <strong>SoloWealth</strong>. This application is a mathematical simulation tool for educational purposes. By using SoloWealth, you unreservedly accept these Terms of Service.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <article class="sections">
+                <section id="purpose">
+                    <h2>1. Purpose of the Application</h2>
+                    <p>SoloWealth offers financial calculation and simulation tools:</p>
+                    <ul>
+                        <li>50/30/20 Budgeting</li>
+                        <li>Compound Interest</li>
+                        <li>Borrowing Capacity</li>
+                        <li>And many more...</li>
+                    </ul>
+                    <p>The goal is to help users visualize hypothetical financial scenarios.</p>
+                </section>
+
+                <section id="advice" class="alert-box">
+                    <h2>2. No Financial Advice</h2>
+                    <div class="important-tag">IMPORTANT</div>
+                    <p><strong>SoloWealth is not a financial, tax, or legal advisor.</strong></p>
+                    <p>The results provided are mathematical estimates based on user-entered data. They should under no circumstances be interpreted as personalized advice or recommendations for purchase, investment, or management.</p>
+                    <p>We strongly recommend consulting a certified professional (financial planner, accountant, notary) before making any financial decisions.</p>
+                </section>
+
+                <section id="liability">
+                    <h2>3. "As Is" Use</h2>
+                    <p>The application is provided "as is" and "as available," without any warranty of accuracy, completeness, or uninterrupted operation.</p>
+                    <div class="grid-details">
+                        <div class="detail-item">
+                            <h3>Responsibility</h3>
+                            <p>You are solely responsible for the data you enter and your interpretation of the results.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Limitation</h3>
+                            <p>SoloWealth cannot be held liable for financial losses or direct/indirect damages.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="third-party">
+                    <h2>4. Third-Party Data</h2>
+                    <p>SoloWealth uses third-party services to provide exchange rates for information purposes.</p>
+                    <ul class="bullet-list">
+                        <li>Rates may experience a delay compared to the real market.</li>
+                        <li>Accuracy of the rates is not guaranteed.</li>
+                        <li>Do not use for financial transactions.</li>
+                    </ul>
+                </section>
+
+                <section id="privacy" class="highlight-section">
+                    <h2>5. Privacy Protection</h2>
+                    <div class="privacy-badge">Privacy by Design</div>
+                    <div class="grid-details">
+                        <div class="detail-item">
+                            <h3>No Collection</h3>
+                            <p>We do not collect, sell, or share any personal data (name, SSN, bank accounts).</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Local Storage</h3>
+                            <p>All your simulations are saved exclusively on your device. No cloud, no leaks.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="intellectual-property">
+                    <h2>6. Intellectual Property</h2>
+                    <p>The source code, design, logos, and texts of SoloWealth are the exclusive property of its creator. Any unauthorized reproduction or distribution is strictly prohibited.</p>
+                </section>
+
+                <section id="jurisdiction">
+                    <h2>7. Governing Law</h2>
+                    <p>These Terms of Service are governed by the laws of the province of <strong>Quebec, Canada</strong>. Any dispute will be submitted to the exclusive jurisdiction of the courts of the district of <strong>Montreal</strong>.</p>
+                </section>
+
+                <section id="modifications">
+                    <h2>8. Modifications</h2>
+                    <p>We reserve the right to modify these terms at any time. Your continued use constitutes your acceptance of the new terms.</p>
+                </section>
+            </article>
+        </section>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 SoloWealth. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scrolling and simple intersection observer for reveal effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
