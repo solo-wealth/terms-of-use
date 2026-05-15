@@ -390,3 +390,15 @@ ul li::before {
     color: #fff;
     border-bottom-color: var(--primary);
 }
+
+.email-link {
+    color: var(--primary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.email-link:hover {
+    color: #fff;
+    border-bottom-color: var(--primary);
+}
