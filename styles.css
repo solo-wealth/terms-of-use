@@ -227,6 +227,7 @@ ul li::before {
     border-radius: 0 0 0 16px;
     font-size: 0.75rem;
     font-weight: 600;
+    z-index: 10;
 }
 
 /* Footer */
@@ -264,6 +265,37 @@ ul li::before {
     
     .grid-details {
         grid-template-columns: 1fr;
+    }
+
+    .privacy-badge {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: inline-block;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+
+    .highlight-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight-section h2 {
+        order: 1;
+    }
+
+    .privacy-badge {
+        order: 2;
+        align-self: flex-start;
+        margin-top: -8px; /* Slightly closer to the title */
+        margin-bottom: 16px;
+    }
+
+    .highlight-section .grid-details, 
+    .highlight-section .privacy-footer,
+    .highlight-section p {
+        order: 3;
     }
 }
 /* Language Selector & Buttons */
